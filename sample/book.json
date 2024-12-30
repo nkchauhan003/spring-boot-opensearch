@@ -1,0 +1,142 @@
+[
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "title": "The Adventure Begins",
+    "author": "John Doe",
+    "genre": "Adventure",
+    "description": "An exciting adventure book filled with thrilling moments."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174001",
+    "title": "Space Odyssey",
+    "author": "Jane Smith",
+    "genre": "Science Fiction",
+    "description": "A journey through space with unexpected encounters."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174002",
+    "title": "The History of Time",
+    "author": "John Doe",
+    "genre": "History",
+    "description": "A detailed look at the history of time and its evolution."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174003",
+    "title": "The Lost World",
+    "author": "Alice Brown",
+    "genre": "Adventure",
+    "description": "Exploring the secrets of an ancient civilization."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174004",
+    "title": "The Martian Chronicles",
+    "author": "Ray Bradbury",
+    "genre": "Science Fiction",
+    "description": "A story about the colonization of Mars and its consequences."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174005",
+    "title": "Ancient Civilizations",
+    "author": "John Doe",
+    "genre": "History",
+    "description": "A study of the world's ancient civilizations."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174006",
+    "title": "Journey to the Center of the Earth",
+    "author": "Jules Verne",
+    "genre": "Adventure",
+    "description": "A daring adventure to the center of the Earth."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174007",
+    "title": "The Future of Technology",
+    "author": "Jane Smith",
+    "genre": "Science Fiction",
+    "description": "Exploring the possibilities of future technological advancements."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174008",
+    "title": "The Civil War",
+    "author": "Alice Brown",
+    "genre": "History",
+    "description": "A comprehensive account of the American Civil War."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174009",
+    "title": "Pirates of the Caribbean",
+    "author": "John Doe",
+    "genre": "Adventure",
+    "description": "A thrilling pirate adventure on the high seas."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174010",
+    "title": "Future Wars",
+    "author": "Jane Smith",
+    "genre": "Science Fiction",
+    "description": "A speculative look at wars in the future."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174011",
+    "title": "The Renaissance",
+    "author": "John Doe",
+    "genre": "History",
+    "description": "The art and culture of the Renaissance period."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174012",
+    "title": "Around the World in 80 Days",
+    "author": "Jules Verne",
+    "genre": "Adventure",
+    "description": "A race around the world in just 80 days."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174013",
+    "title": "The War of the Worlds",
+    "author": "H.G. Wells",
+    "genre": "Science Fiction",
+    "description": "A story of alien invasion and the survival of mankind."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174014",
+    "title": "World War II",
+    "author": "Alice Brown",
+    "genre": "History",
+    "description": "A detailed account of World War II and its global impact."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174015",
+    "title": "The Time Machine",
+    "author": "H.G. Wells",
+    "genre": "Science Fiction",
+    "description": "A story about time travel and its consequences."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174016",
+    "title": "The Great Adventure",
+    "author": "John Doe",
+    "genre": "Adventure",
+    "description": "An epic journey filled with excitement and peril."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174017",
+    "title": "The Industrial Revolution",
+    "author": "Jane Smith",
+    "genre": "History",
+    "description": "The transformation of society during the Industrial Revolution."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174018",
+    "title": "Star Wars: The Old Republic",
+    "author": "George Lucas",
+    "genre": "Science Fiction",
+    "description": "A saga of galactic war and interplanetary adventure."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174019",
+    "title": "The Golden Age of Exploration",
+    "author": "John Doe",
+    "genre": "History",
+    "description": "A look at the golden age of maritime exploration."
+  }
+]

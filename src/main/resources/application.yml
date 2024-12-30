@@ -1,0 +1,16 @@
+spring:
+  application:
+    # The name of the Spring Boot application.
+    name: spring-boot-opensearch
+server:
+  # The port on which the server will run.
+  port: 8081
+opensearch:
+  # The URI of the AWS OpenSearch cluster.
+  uris: https://search-xxx-xxx.ap-south-1.es.amazonaws.com
+  # The username for accessing the AWS OpenSearch cluster.
+  username: admin
+  # The password for accessing the AWS OpenSearch cluster.
+  password: password
+  # The name of the OpenSearch index.
+  index: books
