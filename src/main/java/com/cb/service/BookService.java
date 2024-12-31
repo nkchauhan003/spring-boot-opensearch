@@ -38,7 +38,7 @@ public class BookService {
     /**
      * Constructs a new BookService.
      *
-     * @param client The RestHighLevelClient for interacting with OpenSearch.
+     * @param client         The RestHighLevelClient for interacting with OpenSearch.
      * @param bookRepository The repository for managing Book entities.
      */
     public BookService(RestHighLevelClient client, BookRepository bookRepository) {
@@ -92,6 +92,37 @@ public class BookService {
     }
 
     /**
+     * Searches for books based on a query with pagination.
+     *
+     * @param query The search query.
+     * @param page  The page number (0-based).
+     * @param size  The number of items per page.
+     * @return A SearchResult object containing the list of books, total pages, and total records.
+     * @throws IOException If an I/O error occurs.
+     */
+    public SearchResult<Book> searchBooks(String query, int page, int size) throws IOException {
+        SearchRequest searchRequest = new SearchRequest(indexName);
+        SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
+        sourceBuilder.query(QueryBuilders.queryStringQuery(query)
+                .field("title")
+                .field("description"));
+        sourceBuilder.from(page * size);
+        sourceBuilder.size(size);
+        searchRequest.source(sourceBuilder);
+
+        SearchResponse response = client.search(searchRequest, RequestOptions.DEFAULT);
+        List<Book> books = new ArrayList<>();
+        for (SearchHit hit : response.getHits().getHits()) {
+            books.add(objectMapper.readValue(hit.getSourceAsString(), Book.class));
+        }
+
+        long totalRecords = response.getHits().getTotalHits().value;
+        int totalPages = (int) Math.ceil((double) totalRecords / size);
+
+        return new SearchResult<>(books, totalRecords, totalPages);
+    }
+
+    /**
      * Gets the count of books grouped by genre.
      *
      * @return A map with genre names as keys and the count of books as values.
@@ -100,7 +131,7 @@ public class BookService {
     public Map<String, Long> countBooksByGenre() throws IOException {
         SearchRequest searchRequest = new SearchRequest(indexName);
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
-        sourceBuilder.aggregation(AggregationBuilders.terms("genreAgg").field("genre"));
+        sourceBuilder.aggregation(AggregationBuilders.terms("genreAgg").field("genre").size(100));
         searchRequest.source(sourceBuilder);
 
         SearchResponse response = client.search(searchRequest, RequestOptions.DEFAULT);
